@@ -1,0 +1,6 @@
+I am creating a new project to be hosted on github pages.
+
+Create an index.html homepage with a title banner adn a navigation bar below it.
+the title text is 'Elastic' the nav bar options are, 'bios', discogrophy', 'socials' and 'contact'
+
+These options should be held within a hamburger menu.
