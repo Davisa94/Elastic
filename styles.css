@@ -1,0 +1,41 @@
+    /* Add any additional custom styles here */
+    /* global styles */
+    /* style for the background of the page */
+    body {
+        background-color: rgb(65, 65, 65);
+        color: white;
+      }
+      nav {
+        display: none;
+      }
+      .hamburger-menu {
+        background-color: black;
+        color: white;
+        font-size: large;
+      }
+  
+      .header {
+        background-color: darkgray;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+  
+      .nav-item:hover .nav-link {
+        background-color: lightgray;
+        color: black;
+      }
+  
+      @media (max-width: 767px) {
+        .hamburger-menu {
+          display: block;
+        }
+  
+        nav {
+          display: none;
+        }
+  
+        nav.open {
+          display: block;
+        }
+      }
