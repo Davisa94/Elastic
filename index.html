@@ -33,7 +33,7 @@
   </div>
       <!-- load the AboutBand.html file into the div with the id "AboutBand" -->
       <script>
-        fetch('AboutBand.html')
+        fetch('src/parts/AboutBand.html')
           .then(response => response.text())
           .then(content => {
             document.getElementById('AboutBand').innerHTML = content;
