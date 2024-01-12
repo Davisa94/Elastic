@@ -1,0 +1,9 @@
+for the history create a new folder 'years' for containing each year i.e 2022.html
+to be loaded into the history.html in-place where they need to be.
+
+src/years
+        -> 2023.html
+        -> 2022.html
+        -> 2021.html
+        ...
+Then be sure to load them in.
