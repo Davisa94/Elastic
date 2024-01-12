@@ -22,7 +22,8 @@
         text-align: center;
         padding: 20px 0;
       }
-      header-container {
+
+      .header-container {
         height: 100%;
       }
   
@@ -31,10 +32,10 @@
         color: black;
       }
       
-      .container-fluid {
+      /* .container-fluid {
         height: 100vh;
       }
-      
+       */
       /* .row {
         height: 25%;
       } */
