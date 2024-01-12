@@ -28,19 +28,18 @@
 
 
   <!-- A main paragraph centered in the middle of the page scalable to any screen -->
-  <div class="row about">
-    <!-- load the AboutBand.html file -->
-    <script>
-      fetch('AboutBand.html')
-        .then(response => response.text())
-        .then(content => {
-          const temp = document.createElement('div');
-          temp.innerHTML = content;
-          document.body.appendChild(temp);
-        })
-        .catch(error => console.log(error));
-    </script>
+  <div class="row about" id= "AboutBand">
+
   </div>
+      <!-- load the AboutBand.html file into the div with the id "AboutBand" -->
+      <script>
+        fetch('AboutBand.html')
+          .then(response => response.text())
+          .then(content => {
+            document.getElementById('AboutBand').innerHTML = content;
+          })
+          .catch(error => console.log(error));
+      </script>
 
   <!-- A list of bios -->
   <div class="row">
