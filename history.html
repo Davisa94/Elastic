@@ -9,8 +9,8 @@
       width: 100%;
       height: 100%;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: left;
+      align-items: left;
       font-size: 3rem;
       font-weight: bold;
       opacity: 0.5;
@@ -22,24 +22,50 @@
   </style>
 </head>
 <body>
+    <div id="header"></div>
+    <script>
+      // Load the header.html file
+      fetch('src/parts/header.html')
+        .then(response => response.text())
+        .then(content => {
+          // Create a temporary document to parse the HTML content
+          const temp = document.createElement('div');
+          temp.innerHTML = content;
+  
+          // Get the header content from the temporary document
+          const headerContent = temp.querySelector('header');
+  
+          // Insert the header content into the #header element
+          document.getElementById('header').appendChild(headerContent);
+        })
+        .catch(error => console.log(error));
+    </script>
     <div class="container-fluid h-100">
-        <div class="row h-100 justify-content-left align-items-left">
-          <div class="col">
-            <div class="year current">2023</div>
+        <div class="col">
+          <div class="row">
+            <h1 class="year current text-left">2023</h1>
+            <p class="display-4 pl-5 2023">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed ipsa sint deserunt? Corporis autem, rem aut incidunt sed nulla explicabo! Dolore laudantium labore rerum in unde suscipit vel laboriosam.
+            </p>
           </div>
-          <div class="col">
-            <div class="year">2022</div>
+          <div class="row">
+            <h1 class="year text-left">2022</h1>
+            <p class="display-4 pl-5 2022">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corporis, excepturi illum, atque molestiae esse neque explicabo harum itaque soluta voluptatem tempore aliquid id vitae distinctio adipisci doloremque mollitia molestias.</p>
           </div>
-          <div class="col">
-            <div class="year">2021</div>
+          <div class="row">
+            <h1 class="year text-left">2021</h1>
+            <p class="display-4 pl-5 2021">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste aspernatur dolorem, tempora quidem quam quasi voluptate impedit possimus adipisci aliquam perspiciatis magnam dolor nobis dignissimos odit ipsa facere inventore.</p>
           </div>
-          <div class="col">
-            <div class="year">2020</div>
+          <div class="row">
+            <h1 class="year text-left">2020</h1>
           </div>
           <!-- Add more years here -->
         </div>
       </div>
 
   <script src="history.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
 </body>
 </html>
