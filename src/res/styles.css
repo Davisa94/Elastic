@@ -32,9 +32,9 @@
         height: 100vh;
       }
       
-      .row {
+      /* .row {
         height: 25%;
-      }
+      } */
   
       @media (max-width: 767px) {
         .hamburger-menu {
