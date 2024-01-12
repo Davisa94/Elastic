@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>History Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="src/res/styles.css">
+  <style>
+    .year {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      font-weight: bold;
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+    }
+    .year.current {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="year current">2023</div>
+            <div class="year">2022</div>
+            <div class="year">2021</div>
+            <div class="year">2020</div>
+            <!-- Add more years here -->
+          </div>
+        </div>
+      </div>
+
+  <script src="history.js"></script>
+</body>
+</html>

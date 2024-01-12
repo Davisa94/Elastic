@@ -4,6 +4,8 @@
     body {
         background-color: rgb(65, 65, 65);
         color: white;
+        margin: 0;
+        padding: 0;
       }
       nav {
         display: none;
@@ -24,6 +26,14 @@
       .nav-item:hover .nav-link {
         background-color: lightgray;
         color: black;
+      }
+      
+      .container-fluid {
+        height: 100vh;
+      }
+      
+      .row {
+        height: 25%;
       }
   
       @media (max-width: 767px) {
