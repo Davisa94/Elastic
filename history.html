@@ -26,24 +26,29 @@
 </head>
 <body>
     <div class="container-fluid">
-    <div id="header" style="height: 100%;"></div>
-    <script>
-      // Load the header.html file
-      fetch('src/parts/header.html')
-        .then(response => response.text())
-        .then(content => {
-          // Create a temporary document to parse the HTML content
-          const temp = document.createElement('div');
-          temp.innerHTML = content;
-  
-          // Get the header content from the temporary document
-          const headerContent = temp.querySelector('header');
-  
-          // Insert the header content into the #header element
-          document.getElementById('header').appendChild(headerContent);
-        })
-        .catch(error => console.log(error));
-    </script>
+
+        <div class="row">
+          <div class="col">
+            <div id="header" ></div>
+            <script>
+              // Load the header.html file
+              fetch('src/parts/header.html')
+                .then(response => response.text())
+                .then(content => {
+                  // Create a temporary document to parse the HTML content
+                  const temp = document.createElement('div');
+                  temp.innerHTML = content;
+          
+                  // Get the header content from the temporary document
+                  const headerContent = temp.querySelector('header');
+          
+                  // Insert the header content into the #header element
+                  document.getElementById('header').appendChild(headerContent);
+                })
+                .catch(error => console.log(error));
+            </script>
+            </div>
+        </div>
 
         <!-- a title 'The History of Elastic' -->
         <div class="row">
