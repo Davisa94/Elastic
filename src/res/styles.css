@@ -6,6 +6,7 @@
         color: white;
         margin: 0;
         padding: 0;
+        background-attachment: fixed;
       }
       nav {
         display: none;
@@ -31,7 +32,15 @@
         background-color: lightgray;
         color: black;
       }
+      /* fading tests */
+      /* .year .leaf-node {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
       
+      .year .leaf-node.current {
+        opacity: 1;
+      } */
       /* .container-fluid {
         height: 100vh;
       }
@@ -39,6 +48,44 @@
       /* .row {
         height: 25%;
       } */
+
+      /* .fade-on-scroll{
+        background-image: linear-gradient(
+          transparent 12%,
+          currentColor 30%,
+          currentColor 70%,
+          transparent 90%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-attachment:fixed;
+      }
+
+      .fade-on-scroll > p{
+        color: transparent;
+      } */
+      .mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+      
+      .mask.active {
+        opacity: 1;
+      }
+      
+      .centered-content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
   
       @media (max-width: 767px) {
         .hamburger-menu {
